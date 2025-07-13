@@ -1,110 +1,75 @@
-
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Student Registration Form</title>
+<title>Rigistration Form</title>
 </head>
 <body>
-
-  <h2>Student Registration Form</h2>
-
-  <form>
-    <label>First Name:</label>
-    <input type="text" ><br><br>
-
-    <label>Last Name:</label>
-    <input type="text" ><br><br>
-
-    <label>Date of Birth:</label>
-    <select name="dob_day">
-      <option>Day</option>
-    </select>
-    <select name="dob_month">
-      <option>Month</option>
-    </select>
-    <select name="dob_year">
-      <option>Year</option>
-    </select><br><br>
-    <label>Mobile Number:</label>
-    <input type="tel" ><br><br>
-
-    <label>Gender:</label>
-    <input type="radio" name="gender" value="male"> Male
-    <input type="radio" name="gender" value="female"> Female<br><br>
-
-    <label for="address" style="vertical-align: top;">Address:</label>
-    <textarea name="address" rows="4" cols="40"></textarea><br><br>
-
-    <label>City:</label>
-    <input type="text"><br><br>
-
-    <label>Pin Code:</label>
-    <input type="text" ><br><br>
-
-    <label>State:</label>
-    <input type="text"><br><br>
-
-    <label>Country:</label>
-    <input type="text" value="Pakistan"><br><br>
-
-    <label>Hobbies:</label><br>
-    <input type="checkbox"> Drawing
-    <input type="checkbox" > Singing
-    <input type="checkbox"> Dancing
-    <input type="checkbox"> Sketching
-    <input type="checkbox"> Others:
-    <input type="text"><br><br>
-
-    <label>Qualification:</label><br>
-    <table border="1" cellpadding="5" cellspacing="0">
-      <tr>
-        <th>Sl.No.</th>
-        <th>Examination</th>
-        <th>Board</th>
-        <th>Percentage</th>
-        <th>Year of Passing</th>
-      </tr>
-      <tr>
+<form action=""></form>
+<label for="FIRST NAME">FIRST NAME:</label> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <input type="text" id="fname" maxlength="30" name="fname"> (max 30 charecters a-z and A-Z)
+<br> <br><label for="lname">LAST NAME:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" maxlength="30" id="lname" name="lname"> (max 30 charecters a-z and A-Z)
+<br> <br> <label for="dob">DATE OF BIRTH:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+<select name="Day" id="Day"><option>Day:</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option></select>
+<select name="month" id="month"><option>Month:</option><option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option><option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option></select>
+<select name="year" id="year"><option>Year:</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option><option>2018</option><option>2019</option><option>2020</option><option>2021</option><option>2022</option><option>2023</option><option>2024</option><option>2025</option></select> <br> <br>
+<label for="email">EMAIL ID:</label> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email" id="email"> <br> <br>
+<label for="mobile no">MOBILE NUMBER:</label>&nbsp;&nbsp;&nbsp;  <input type="mobile no" name="mobile no" id="mobile no" maxlength="10 digits"> (10 digit number)<br> <br>
+<label for="gender">GENDER:</label>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label> <br> <br>
+<label for="address">ADDRESS:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="address" id="address" rows="4" cols="35"></textarea> </p>
+<label for="city">CITY:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="city" id="city" maxlength="30"> (max 30 charecters a-z and A-Z)
+<br> <br> <label for="pin code">PIN CODE:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="pin code" id="pin code" maxlength="6 digits"> (6 digit number)
+<br> <br><label for="state">STATE:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="state" id="state" maxlength="30"> (max 30 charecters a-z and A-Z)
+<br> <br><label for="country" >COUNTRY:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="India"> <br> <br>
+<label for="hobbies">HOBBIES:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for=""><input type="checkbox" name="drawing" id="yes">Drawing</label><label for=""><input type="checkbox" name="singing" id="yes">Singing</label><label for=""><input type="checkbox" name="dancing" id="yes">Dancing</label><label for=""><input type="checkbox" name="sketching" id="yes">Sketching</label> <label for=""><input type="checkbox" name="others" id="yes">Others</label> <input type="text">
+<br> <br> <label for="qualification">QUALIFICATION:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<center><table border="1">
+<tr><th>SI.No:</th>
+<th>Examination:</th>
+<th>Board:</th>
+<th>Percentage:</th>
+<th>Year of Passing:</th>
+</tr>
+<tr>
         <td>1</td>
-        <td>Class X</td>
+        <td>Class X :</td>
         <td><input type="text"></td>
         <td><input type="text"></td>
         <td><input type="text"></td>
       </tr>
       <tr>
         <td>2</td>
-        <td>Class XII</td>
+        <td>Class XII :</td>
         <td><input type="text"></td>
         <td><input type="text"></td>
         <td><input type="text"></td>
       </tr>
       <tr>
         <td>3</td>
-        <td>Graduation</td>
+        <td>Graduation:</td>
         <td><input type="text"></td>
         <td><input type="text"></td>
         <td><input type="text"></td>
       </tr>
       <tr>
         <td>4</td>
-        <td>Masters</td>
+        <td>Masters:</td>
         <td><input type="text" ></td>
         <td><input type="text"></td>
         <td><input type="text" ></td>
       </tr>
-    </table><br><br>
-
-    <label>Courses Applied For:</label><br>
-    <input type="radio"> BCA
-    <input type="radio"> B.Com
-    <input type="radio"> B.Sc
-    <input type="radio"> B.A<br><br>
-
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
-  </form>
-
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(10 char max)</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(upto 2 decimal)</td>
+<td>&nbsp;</td>
+</tr>
+</table> </center><br> <br>
+<label for="">COURSES: <br> APPLIED FOR : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="BCA"><label for="BCA">BCA</label>
+<input type="radio" name="B.Com"><label for="B.Com">B.Com</label>
+<input type="radio" name="B.Sc"><label for="B.Sc">B.Sc</label>
+<input type="radio" name="B.A"><label for="B.A">B.A</label>
+ <br> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit">
+<input type="button" value="Reset">
 </body>
 </html>
